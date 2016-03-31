@@ -1,0 +1,28 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+append styles
+    link(rel = "stylesheet", href = "/stylesheets/editStyle.css")
+
+block body
+    +navbar
+        +nav_item("/", "active") Home
+        +nav_item("/search", "active") Search
+        +nav_item("/browse/*", "active") Browse
+        +nav_item("/add", "active") Add files
+    br
+
+
+    .container
+        h3(style = {color: '#999999'}) Edit
+        br
+
+        form(action = "/save?query=" + url, method = "post")
+            textarea(name = "txtEdit", style = "height:400px; width:100%", id = "editBox") #{content}
+            div(id = "saveBtn")
+                button(type = "submit", class="btn btn-default")
+                    span(class = "glyphicon glyphicon-ok-circle" aria-hidden="true")
+    -if(b == 1){
+        div(style={color: 'white', background: '#c62828', marginTop: "10px", marginBottom: "10px"})
+            .container
+                h1 Saved
+    -}
+

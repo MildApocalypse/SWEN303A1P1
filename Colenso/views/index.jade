@@ -1,0 +1,13 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+
+block body
+    +navbar
+        +nav_item("/", "active") Home
+        +nav_item("/search", "active") Search
+        +nav_item("/browse/*", "active") Browse
+        +nav_item("/add", "active") Add files
+    div(style={color:'white', background: '#c62828' })
+        .container
+            h1 Colenso Database
+        .container
+            p Welcome to the Colenso database. Please click on an option to get started.

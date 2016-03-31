@@ -1,0 +1,22 @@
+#stringSearchBar {
+    float: left;
+    margin-right: 10px
+}
+
+#xQSearchBar {
+    float: left;
+    margin-right: 10px;
+}
+
+#xQSearchBtn {
+    float: left;
+}
+
+#editBtn {
+    float: right;
+}
+
+#teiBtn {
+    float: right;
+    margin-left: 10px;
+}

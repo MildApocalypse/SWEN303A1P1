@@ -1,0 +1,34 @@
+17:35:47.236	SERVER	admin	OK	Server was started (port: 1984).
+17:35:53.265	SERVER	admin	OK	Server was stopped (port: 1984).
+17:36:37.875	SERVER	admin	ERROR	Stopped at , 1/14: Syntax: CREATE [BACKUP|DATABASE|INDEX|USER] [...] Create database, index, user, backup or event. Creates a new database, index, user, backup or event: - BACKUP [name]: creates a backup of the database [name] - DATABASE [name] ([input]): creates the database [name] with an optional [input] - INDEX [TEXT|ATTRIBUTE|TOKEN|FULLTEXT]: creates the specified index - USER [name] ([password]): creates the specified user
+17:37:45.772	SERVER	admin	OK	Server was started (port: 1984).
+17:57:18.447	127.0.0.1:50036	admin	REQUEST	OPEN Colenso	1.23 ms
+17:57:18.460	127.0.0.1:50036	admin	OK	Database 'Colenso' was opened in 12.76 ms.	13.32 ms
+18:05:57.129	127.0.0.1:59958	admin	REQUEST	OPEN Colenso	0.34 ms
+18:05:57.130	127.0.0.1:59958	admin	OK	Database 'Colenso' was opened in 0.04 ms.	0.3 ms
+18:06:08.053	127.0.0.1:59958	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	2.74 ms
+18:06:08.159	127.0.0.1:59958	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	106.35 ms
+18:08:08.128	127.0.0.1:59958	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	0.36 ms
+18:08:08.130	127.0.0.1:59958	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	1.25 ms
+18:14:03.974	127.0.0.1:37976	admin	REQUEST	OPEN Colenso	0.22 ms
+18:14:03.974	127.0.0.1:37976	admin	OK	Database 'Colenso' was opened in 0.03 ms.	0.33 ms
+18:14:23.704	127.0.0.1:37976	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	0.36 ms
+18:14:23.705	127.0.0.1:37976	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	1.43 ms
+18:15:13.677	127.0.0.1:43028	admin	REQUEST	OPEN Colenso	0.29 ms
+18:15:13.677	127.0.0.1:43028	admin	OK	Database 'Colenso' was opened in 0.03 ms.	0.34 ms
+18:15:17.268	127.0.0.1:43028	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	0.27 ms
+18:15:17.269	127.0.0.1:43028	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	0.74 ms
+18:17:17.364	127.0.0.1:43028	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	0.27 ms
+18:17:17.365	127.0.0.1:43028	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	0.85 ms
+18:17:42.764	127.0.0.1:53930	admin	REQUEST	OPEN Colenso	0.27 ms
+18:17:42.764	127.0.0.1:53930	admin	OK	Database 'Colenso' was opened in 0.04 ms.	0.38 ms
+18:17:45.390	127.0.0.1:53930	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	0.27 ms
+18:17:45.391	127.0.0.1:53930	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	1.01 ms
+18:23:59.159	SERVER	admin	OK	Server was stopped (port: 1984).
+18:25:22.989	SERVER	admin	OK	Server was started (port: 1984).
+18:25:48.331	127.0.0.1:57116	admin	REQUEST	OPEN Colenso	1.35 ms
+18:25:48.332	127.0.0.1:57116	admin	OK	Database 'Colenso' was opened in 0.45 ms.	0.9 ms
+18:25:52.639	127.0.0.1:57116	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	5.15 ms
+18:25:52.793	127.0.0.1:57116	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	154.43 ms
+18:29:10.894	127.0.0.1:57116	admin	REQUEST	XQUERY declare default namespace 'http://tei-c.org/ns/1.0';(//name[@type='place'])	7162.01 ms
+18:29:11.470	127.0.0.1:57116	admin	ERROR	Stopped at ., 1/17: [XPST0003] Expecting 'function', 'variable', ...	332.3 ms

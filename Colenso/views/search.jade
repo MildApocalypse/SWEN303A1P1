@@ -1,0 +1,68 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+append styles
+    link(rel = "stylesheet", href = "/stylesheets/searchStyle.css")
+
+block body
+    +navbar
+        +nav_item("/", "active") Home
+        +nav_item("/search", "active") Search
+        +nav_item("/browse/*", "active") Browse
+        +nav_item("/add", "active") Add files
+
+    br
+
+    .container
+
+        h3(style = {color: '#999999'}) Search
+        form(action="/stringSearch", method="get")
+            div(id = "stringSearchBar")
+                input(type="text", name="stringSearch", class="form-control",
+                placeholder="Enter search terms here.")
+            div(id = "stringSearchBtn")
+                button(type="submit", class="btn btn-default")
+                    span(class="glyphicon glyphicon-search" aria-hidden="true")
+
+        br
+        h3(style = {color: '#999999'}) Query Search
+        form(action = "/xQSearch", method = "get")
+            div(id = "xQSearchBar")
+                input(type = "text", name="xQSearch", class = "form-control",
+                placeholder = "Enter search terms here.")
+            div(id = "xQSearchBtn")
+                button(type = "submit", class = "btn btn-default")
+                    span(class = "glyphicon glyphicon-search" aria-hidden = "true")
+
+
+            -if(doc != undefined){
+                div(id = "teiBtn")
+                    a(href = "search?tei=" + url)
+                        button(type = "button", class = "btn btn-default") Show xml
+
+                div(id = "editBtn")
+                    a(href = "edit?query=" + url)
+                        button(type = "button", class = "btn btn-default")
+                            span(class = "glyphicon glyphicon-pencil", aria-hidden = "true")
+            -}
+    br
+    .container
+        -if(doc != undefined){
+            -if (b == 1) {
+                p #{doc}
+            -}
+            -else {
+                p !{doc}
+            -}
+         -}
+        -else if(results != undefined) {
+            div(class = "jumbotron")
+                h2 Results:
+                ol
+                    -for(i = 0; i < results.length; i++) {
+                        li: a(href = "stringSearch?stringSearch=" + results[i] + "/") #{results[i]}
+                    -}
+        -}
+        -else if(xQResults != undefined) {
+            div(class = "jumbotron")
+                h2 Results:
+                p3 #{xQResults}
+        -}

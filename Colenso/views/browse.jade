@@ -1,0 +1,25 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+
+block body
+    +navbar
+        +nav_item("/", "active") Home
+        +nav_item("/search", "active") Search
+        +nav_item("/browse/*", "active") Browse
+        +nav_item("/add", "active") Add files
+    br
+
+    .container
+        h3(style = {color: '#999999'}) Browse
+        br
+        ol
+            -if (linkPath != undefined) {
+                 -for (i = 0; i < linkPath.length; i++) {
+                     -var branchLink = "/browse/" + link[i]
+                    li: a(href =  branchLink) #{linkPath[i]}
+                -}
+            -}
+            -else{
+                p #{teiFileResult}
+                p !{fileResult}
+            -}
+
